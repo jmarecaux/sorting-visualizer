@@ -34,7 +34,7 @@ export default class SortingVisualizer extends React.Component {
     resetArray(NUMBER_OF_ARRAY_BARS) {
         const array = [];
         for(let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-            array.push(randomIntFromInterval(5,500));
+            array.push(randomIntFromInterval(5,window.innerHeight/2));
         }
         this.setState({array});
     }
@@ -83,7 +83,6 @@ export default class SortingVisualizer extends React.Component {
                 <input type="range" min={5} max={750} value={this.state.numBars} className="slider" onChange={this.handleOnChange}/>
             </div>
             <div className="header-container">
-                <div className="button-container">
                 <button
                     onClick={() => this.resetArray(this.state.numBars)}
                     className="reset-button"
@@ -92,7 +91,6 @@ export default class SortingVisualizer extends React.Component {
                     RESET
                 </span>
                 </button>
-                </div>
                 <button
                     onClick={() =>{ const animations = getShuffleArrayAnimations(this.state.array); this.animate(animations);}}
                     className="button"
