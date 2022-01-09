@@ -8,4 +8,5 @@ https://jmarecaux.github.io/sorting-visualizer/
 Use the top bar to control the length of the array and the animation speed.
 
 I was inspired to create this sorting visualizer for the most common sorting algorithms. I had a great time doing so and learned
-much about how these algorithms work as well as how they are implemented using React.
+much about how these algorithms work as well as how they are implemented using React. Upon completion I spent almost as much time
+playing around with it as I did writing it!
